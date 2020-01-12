@@ -2,7 +2,7 @@ package com.IamDipakPatil.tutorials;
 
 public class PrimitiveTypes {
     public static void main(String args[]) {
-        //There are Eight Primitive Types in Java.
+        //There are 8 Primitive Types in Java.
         //boolean
         //byte
         //char
@@ -12,10 +12,56 @@ public class PrimitiveTypes {
         //float
         //double
 
-        //integerTypes();
-        //byteTypes();
-        //shortTypes();
+        integerTypes();
+        byteTypes();
+        shortTypes();
         longTypes();
+        casting();
+        floatAndDouble();
+        charType();
+        booleanType();
+    }
+
+    private static void booleanType() {
+        boolean myTrueBooleanValue = true;
+        boolean myFalseBooleanValue = false;
+
+        System.out.println(myFalseBooleanValue);
+        System.out.println(myTrueBooleanValue);
+    }
+
+    private static void charType() {
+        char myChar = 'D';
+        char myUnicodeChar = '\u0044';
+
+        System.out.println("My char= " + myChar);
+        System.out.println("My unicode char= " + myUnicodeChar);
+
+        char myCopyrightChar = '\u00A9';
+        System.out.println(myCopyrightChar);
+    }
+
+    private static void floatAndDouble() {
+        float floatValue = 2.5f;
+        //float floatValue1 = 2.5; //Gives incompatible type error
+        float minFloatValue = Float.MIN_VALUE;
+        float maxFloatValue = Float.MAX_VALUE;
+
+        System.out.println("Float value= " + floatValue);
+        System.out.println("Float minimum value= " + minFloatValue);
+        System.out.println("Float maximum value= " + maxFloatValue);
+
+
+        double doubleValue = 2.5d;
+        //double doubleValue1 = 2.5; //No incompatible type error
+        double minDoubleValue = Double.MIN_VALUE;
+        double maxDoubleValue = Double.MAX_VALUE;
+
+        System.out.println("Double value= " + doubleValue);
+        System.out.println("Double minimum value= " + minDoubleValue);
+        System.out.println("Double maximum value= " + maxDoubleValue);
+
+
     }
 
     private static void integerTypes() {
@@ -29,8 +75,8 @@ public class PrimitiveTypes {
         System.out.println("Integer minimum value = " + myMinInt);
         System.out.println("Integer maximum value = " + myMaxInt);
 
-        System.out.println("Busted MIN value = " + (myMinInt-1));
-        System.out.println("Busted MAX value = " + (myMaxInt+1));
+        System.out.println("Busted MIN value = " + (myMinInt - 1));
+        System.out.println("Busted MAX value = " + (myMaxInt + 1));
 
     }
 
@@ -45,8 +91,8 @@ public class PrimitiveTypes {
         System.out.println("Byte minimum value = " + myMinValue);
         System.out.println("Byte maximum value = " + myMaxValue);
 
-        System.out.println("Busted MIN value = " + (byte)(myMinValue-1));
-        System.out.println("Busted MAX value = " + (byte)(myMaxValue+1));
+        System.out.println("Busted MIN value = " + (byte) (myMinValue - 1));
+        System.out.println("Busted MAX value = " + (byte) (myMaxValue + 1));
 
     }
 
@@ -61,8 +107,8 @@ public class PrimitiveTypes {
         System.out.println("Short minimum value = " + myMinValue);
         System.out.println("Short maximum value = " + myMaxValue);
 
-        System.out.println("Busted MIN value = " + (short)(myMinValue-1));
-        System.out.println("Busted MAX value = " + (short)(myMaxValue+1));
+        System.out.println("Busted MIN value = " + (short) (myMinValue - 1));
+        System.out.println("Busted MAX value = " + (short) (myMaxValue + 1));
     }
 
     private static void longTypes() {
@@ -76,16 +122,16 @@ public class PrimitiveTypes {
         System.out.println("Long minimum value = " + myMinValue);
         System.out.println("Long maximum value = " + myMaxValue);
 
-        System.out.println("Busted MIN value = " + (myMinValue-1));
-        System.out.println("Busted MAX value = " + (myMaxValue+1));
+        System.out.println("Busted MIN value = " + (myMinValue - 1));
+        System.out.println("Busted MAX value = " + (myMaxValue + 1));
     }
 
-    private static void casting(){
+    private static void casting() {
 
         int myValue = 2147483647;
 
-        int myTotal=(myValue/2);
+        int myTotal = (2147483647 / 2);
 
-        byte myNewByteValue= (1288/2);
+        byte myNewByteValue = (128 / 2);
     }
 }
