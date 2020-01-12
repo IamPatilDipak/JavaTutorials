@@ -31,6 +31,7 @@ public class PrimitiveTypes {
     }
 
     private static void charType() {
+        //Character is 2 byte, 1 byte is reserved for unicode symbol,
         char myChar = 'D';
         char myUnicodeChar = '\u0044';
 
@@ -42,6 +43,8 @@ public class PrimitiveTypes {
     }
 
     private static void floatAndDouble() {
+        //Float is Single precision 32 bit type. Precisions are 7 digits
+        //Double is double precision 64 bit type. Precisions are 16 digits
         float floatValue = 2.5f;
         //float floatValue1 = 2.5; //Gives incompatible type error
         float minFloatValue = Float.MIN_VALUE;
@@ -60,8 +63,6 @@ public class PrimitiveTypes {
         System.out.println("Double value= " + doubleValue);
         System.out.println("Double minimum value= " + minDoubleValue);
         System.out.println("Double maximum value= " + maxDoubleValue);
-
-
     }
 
     private static void integerTypes() {
@@ -77,7 +78,6 @@ public class PrimitiveTypes {
 
         System.out.println("Busted MIN value = " + (myMinInt - 1));
         System.out.println("Busted MAX value = " + (myMaxInt + 1));
-
     }
 
     private static void byteTypes() {
