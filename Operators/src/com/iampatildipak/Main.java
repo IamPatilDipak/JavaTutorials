@@ -43,7 +43,10 @@ public class Main {
         // Ternary operator
         boolean isCar = true;
         boolean wasCar = isCar ? true : false;
-        if(wasCar)
+        if (wasCar)
             System.out.println("wasCar is true");
+
+        //Operator precedence
+        //Check : http://www.cs.bilkent.edu.tr/~guvenir/courses/CS101/op_precedence.html
     }
 }
