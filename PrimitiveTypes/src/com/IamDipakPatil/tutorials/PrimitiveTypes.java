@@ -23,6 +23,8 @@ public class PrimitiveTypes {
     }
 
     private static void booleanType() {
+
+        //Boolean is smallest data type i.e. made up of only (1 bit)
         boolean myTrueBooleanValue = true;
         boolean myFalseBooleanValue = false;
 
@@ -31,7 +33,7 @@ public class PrimitiveTypes {
     }
 
     private static void charType() {
-        //Character is 2 byte, 1 byte is reserved for unicode symbol,
+        //Character is 2 byte (16 bits), 1 byte is reserved for unicode symbol,
         char myChar = 'D';
         char myUnicodeChar = '\u0044';
 
@@ -66,6 +68,7 @@ public class PrimitiveTypes {
     }
 
     private static void integerTypes() {
+        //Integer is 32 bits
         int myValue = 2147483647;
         //int myValue1 = 2147483648; //Error integer number too long
         int myMinInt = Integer.MIN_VALUE; //Integer is a wrapper class
@@ -81,6 +84,7 @@ public class PrimitiveTypes {
     }
 
     private static void byteTypes() {
+        //Byte is 8 bits
         byte myValue = 127;
         //byte myValue1 = 128; //Incompatible Type
         byte myMinValue = Byte.MIN_VALUE; //Byte is a wrapper class MIN = -128
@@ -97,6 +101,7 @@ public class PrimitiveTypes {
     }
 
     private static void shortTypes() {
+        //Short is 16 bits
         short myValue = 32767;
         //short myValue1 = 32768; //Incompatible Type
         short myMinValue = Short.MIN_VALUE; //Short is a wrapper class MIN = -32768
@@ -112,6 +117,7 @@ public class PrimitiveTypes {
     }
 
     private static void longTypes() {
+        //Long type is 64 bits
         long myValue = 9223372036854775807L;
         //long myValue = 9223372036854775808L; //Incompatible Type
         long myMinValue = Long.MIN_VALUE; //Short is a wrapper class MIN = -32768
