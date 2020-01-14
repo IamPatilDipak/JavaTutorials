@@ -6,16 +6,12 @@ public class LeapYear {
 
         if (year <= 0 || year > 9999) {
             leapYear = false;
-        } else if (year % 4 == 0) {
-            if (year % 100 == 0) {
-                if (year % 400 == 0) {
+        }else if (((year % 4 == 0) && (year % 100!= 0)) || (year%400 == 0)) {
                     leapYear = true;
-                }
-            } else {
+        } else {
                 leapYear = true;
-            }
         }
-
+        
         return leapYear;
     }
 }
