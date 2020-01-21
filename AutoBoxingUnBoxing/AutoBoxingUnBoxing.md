@@ -1,4 +1,5 @@
 Converting a **primitive data type** into an object of the corresponding **wrapper** class is called **autoboxing**. 
+
 For example, converting int to Integer or converting long to Long object.
 
 Java compiler applies autoboxing when a primitive value is:
