@@ -7,5 +7,9 @@ public class Main {
         for (int i = 0; i <= 10; i++) {
             System.out.println(SumAllNumbers.nSum(i));
         }
+
+        for (int i = 0; i <= 10; i++) {
+            System.out.println(SumAllNumbers.nSum1(i));
+        }
     }
 }
