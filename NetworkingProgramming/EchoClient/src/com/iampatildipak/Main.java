@@ -21,7 +21,6 @@ public class Main {
             String response;
 
             do {
-
                 System.out.println("Enter string to be echoed: ");
                 echoString = scanner.nextLine();
 
