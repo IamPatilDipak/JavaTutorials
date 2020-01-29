@@ -37,3 +37,32 @@ There are two main reasons:
 That's brings us to ***Concurrency***, which refers to an application doing more than one thing at a time. Now that doesn't necessarily mean that
 the application is doing more than one thing at the same time. It means that progress can be made on more than one task. Let's say that an application
 wants to download data and draw a shape on the screen.
+
+**Implement Runnable vs Extend Thread in Java**
+
+As discussed in Java multi-threading article we can define a thread in the following two ways:
+-- By extending Thread class
+-- By implementing Runnable interface
+
+
+
+***Basic***
+Each thread creates a unique object and gets associated with it.
+Multiple threads share the same objects.
+
+***Memory*** 
+As each thread create a unique object, more memory required.
+As multiple threads share the same object less memory is used.
+
+***Extending***
+In Java, multiple inheritance not allowed hence, after a class extends Thread class, it can not extend any other class.
+If a class define thread implementing the Runnable interface it has a chance of extending one class.
+
+***Use*** 
+A user must extend thread class only if it wants to override the other methods in Thread class.
+If you only want to specialize run method then implementing Runnable is a better option.
+
+***Coupling*** 
+Extending Thread class introduces tight coupling as the class contains code of Thread class and also the job assigned to the thread
+Implementing Runnable interface introduces loose coupling as the code of Thread is separate form the job of Threads.
+
